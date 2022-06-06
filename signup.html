@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>part3</title>
+    <style>
+#container{
+    width: 380px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(5,50px);
+    /* border: 1px solid green; */
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+   
+    background-color: #48c9b0;
+}
+#container > div{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    /* border: 1px solid red; */
+   /* text-align: center; */
+   justify-content: center;
+  align-items: center;
+   margin-top: 20px;
+  
+   font-size: 20px ;
+}
+h4{
+    color: white;
+    font-size: 30px;
+}
+.main{
+    background-color: white;
+    color: grey;
+    text-align: left;
+}
+.head{
+    background-color: #17a589;
+    color: white;
+}
+    </style>
+</head>
+<body>
+ <div id="container">
+     <h4>- Visitor -</h4>
+     <div class="main">Full Name</div>
+     <div class="main">Email</div>
+     <div class="main">Organization</div>
+     <div class="head">Sign UP</div>
+     <div class="head">RETURN</div>
+ </div>   
+</body>
+</html>
+
