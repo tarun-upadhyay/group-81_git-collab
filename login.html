@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        body{
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(79,128,205,1) 50%, rgba(111,97,190,1) 100%);
+        }
+        #main{
+            width: 100%;
+            height: 850px;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(79,128,205,1) 50%, rgba(111,97,190,1) 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #content{
+            width: 20%;
+            height: 60%;
+            background-color: white;
+            text-align: center;
+            border-radius: 15px;
+        }
+        #content > h1{
+            height: 30%;
+            /* border: 1px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form{
+            line-height: 30px;
+        }
+        input{
+            width: 70%;
+            height: 50px;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid grey;
+        }
+        form input:last-child{
+            border: none;
+            margin: 20px 0px;
+            color: white;
+            font-size: large;
+            transition: box-shadow 100ms ease-out;
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(79,128,205,1) 50%, rgba(111,97,190,1) 100%);
+        }
+        #options span{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="content">
+            <h1>Login</h1>
+            <form id="login">
+                <input type="email" placeholder="Email">
+                <br>
+                <input type="password" placeholder="Password">
+                <br>
+                <input type="submit" value="Login">
+            </form>
+            <div id="options">
+                <p>Forgot <span>Password</span>&quest;</p>
+                <p>Don't have an account? <span>Sign up</span></p>
+            </div>
+        </div>
+      
+    </div>
+</body>
+</html>
