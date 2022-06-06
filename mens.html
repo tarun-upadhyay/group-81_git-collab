@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mens Page</title>
+
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        
+        
+      }
+      .first{
+          /* border: 1px solid red; */
+          width: 60%;
+          /* justify-content: center; */
+          margin: auto;
+         
+      }
+      img{
+          width: 70%;
+          display: grid;
+          justify-content: center;
+          padding-left: 50px;
+      }
+      #img{
+          width: 100%;
+      }
+      #container > div:first-child{
+          margin-right: 200px;
+      }
+      #container > div:last-child{
+          margin-left: 200px;
+      }
+      h1{
+          font-size: 40px;
+      }
+      p{
+          font-size: 30px;
+          color: gray;
+      }
+      .price{
+          display: grid;
+          grid-template-columns: 50px 50px 50px;
+          grid-template-rows: auto;
+          /* margin-top: -30px; */
+        }
+      .price > h4:first-child{
+          font-size: 40px;
+          margin-top: -10px;  
+      }
+      .price > h4:nth-child(2){
+          font-size: 35px;
+          margin-left: 40px;
+          color: gray;
+          text-decoration:line-through ;
+          margin-top: -10px;
+      }
+      .price > h4:nth-child(3){
+          font-size: 30px;
+          margin-left: 100px;
+          color: green;
+          margin-top: -10px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="first">
+        <img
+          src="https://m.media-amazon.com/images/I/71XGNyd5vaL._AC_UL320_.jpg"
+          alt="Loading"
+        />
+        <h1>Pause</h1>
+        <p>Men Cotton Long Sleeves Shrug</p>
+        <div class="price">
+          <h4>₹359</h4>
+          <h4>₹1,499</h4>
+          <h4>-76%</h4>
+        </div>
+      </div>
+      <div class="first">
+        <img id="img"
+          src="data:image/jpeg;base64,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"
+          alt="Loading"
+        />
+        <h1>JUBINATION</h1>
+        <p>Men Wool Sleeveless sweater Pack Of 1</p>
+
+        <div class="price">
+          <h4>₹799</h4>
+          <h4>₹1,499</h4>
+          <h4>-47%</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
